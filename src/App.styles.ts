@@ -2,16 +2,15 @@ import styled, {
 	createGlobalStyle,
 } from 'styled-components';
 
-import bgImg from './images/ben-mullins.jpg';
-
 export const GlobalStyle = createGlobalStyle`
     html {
         height: 100%;
     }
 
     body {
-        background-image: url(${bgImg});
+        background-image: url(https://source.unsplash.com/random);
         background-size: cover;
+        background-position: center;
         margin: 0;
         padding: 0 20px;
         display: flex;
@@ -34,16 +33,48 @@ export const Wrapper = styled.div`
 	}
 	.score {
 		color: #fff;
+		filter: drop-shadow(2px 2px #9ec3ff);
 		font-size: 2rem;
 		margin: 0;
 	}
+
+	.questionsContainer {
+		background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0.85),
+			rgba(224, 138, 25, 0.95)
+		);
+		padding: 2em 1em;
+		border-radius: 10px;
+	}
+
+	.answerBtnsContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 1em 0px;
+	}
+
+	.answerBtns {
+		width: 100%;
+		border-radius: 10px;
+		outline: transparent;
+	}
+	.answerBtns:hover {
+		background: rgba(82, 255, 87, 0.5);
+	}
+
+	.loafingGif {
+		transform: scale(0.5) translate(0%, -50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	h1 {
 		font-family: Fascinate Inline;
-		background-image: linear-gradient(
-			180deg,
-			#fff,
-			#87f1ff
-		);
+		background: linear-gradient(180deg, #fff, #e08a19);
 		font-weight: 400;
 		background-size: 100%;
 		background-clip: text;
@@ -51,7 +82,7 @@ export const Wrapper = styled.div`
 		-webkit-text-fill-color: transparent;
 		-moz-background-clip: text;
 		-moz-text-fill-color: transparent;
-		filter: drop-shadow(2px 2px #0085a3);
+		filter: drop-shadow(2px 2px #9ec3ff);
 		font-size: 70px;
 		text-align: center;
 		margin: 20px;
@@ -59,7 +90,7 @@ export const Wrapper = styled.div`
 	.start,
 	.next {
 		cursor: pointer;
-		background: linear-gradient(180deg, #ffffff, #ffcc91);
+		background: linear-gradient(180deg, #fff, #e08a19);
 		border: 2px solid #d38558;
 		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
 		border-radius: 10px;
