@@ -38,6 +38,10 @@ export const Wrapper = styled.div`
 		margin: 0;
 	}
 
+	.cardContainer {
+		width: 60vw;
+	}
+
 	.questionsContainer {
 		background: linear-gradient(
 			180deg,
