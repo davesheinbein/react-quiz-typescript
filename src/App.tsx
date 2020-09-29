@@ -18,7 +18,7 @@ export type AnswerObject = {
 	correctAnswer: string;
 };
 
-const TOTAL_QUESTIONS = 10;
+const TOTAL_QUESTIONS = 20;
 
 const App = () => {
 	const [loading, setLoading] = useState(false);
@@ -94,7 +94,7 @@ const App = () => {
 				<h1>
 					React Typescript
 					<br />
-					Quiz App
+					Tv Quiz
 				</h1>
 				{gameOver ||
 				userAnswers.length === TOTAL_QUESTIONS ? (

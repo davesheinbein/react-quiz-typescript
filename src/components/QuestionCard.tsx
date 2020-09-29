@@ -3,6 +3,11 @@ import React from 'react';
 // types
 import { AnswerObject } from '../App';
 
+import {
+	Wrapper,
+	ButtonWrapper,
+} from './QuestionCard.styles';
+
 type Props = {
 	question: string;
 	answers: string[];
@@ -22,14 +27,18 @@ const QuestionCard: React.FC<Props> = ({
 	questionNumber,
 	totalQuestions,
 }) => (
-	<div className='cardContainer'>
+	<Wrapper>
 		<p className='number'>
 			Questions: {questionNumber}/ {totalQuestions}
 		</p>
 		<p dangerouslySetInnerHTML={{ __html: question }}></p>
 		<div>
 			{answers.map((answer) => (
-				<div key={answer} className='answerBtnsContainer'>
+				<ButtonWrapper
+					key={answer}
+					correct={userAnswer?.correctAnswer === answer}
+					userClicked={userAnswer?.answer === answer}
+					className='answerBtnsContainer'>
 					<button
 						disabled={userAnswer ? true : false}
 						value={answer}
@@ -40,10 +49,10 @@ const QuestionCard: React.FC<Props> = ({
 								__html: answer,
 							}}></span>
 					</button>
-				</div>
+				</ButtonWrapper>
 			))}
 		</div>
-	</div>
+	</Wrapper>
 );
 
 export default QuestionCard;

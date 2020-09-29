@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-image: url(https://source.unsplash.com/random);
+        background-image: url(https://source.unsplash.com/random/tv-movies);
         background-size: cover;
         background-position: center;
         margin: 0;
@@ -29,44 +29,22 @@ export const Wrapper = styled.div`
 	flex-direction: column;
 	align-items: center;
 	> p {
-		color: #fff;
+		color: #333333;
 	}
 	.score {
-		color: #fff;
-		filter: drop-shadow(2px 2px #9ec3ff);
-		font-size: 2rem;
-		margin: 0;
-	}
-
-	.cardContainer {
-		width: 60vw;
-	}
-
-	.questionsContainer {
+		color: transparent;
 		background: linear-gradient(
 			180deg,
-			rgba(255, 255, 255, 0.85),
-			rgba(224, 138, 25, 0.95)
+			rgba(224, 138, 25, 0.95),
+			rgba(255, 255, 255, 0.85)
 		);
-		padding: 2em 1em;
-		border-radius: 10px;
-	}
-
-	.answerBtnsContainer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		margin: 1em 0px;
-	}
-
-	.answerBtns {
-		width: 100%;
-		border-radius: 10px;
-		outline: transparent;
-	}
-	.answerBtns:hover {
-		background: rgba(82, 255, 87, 0.5);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-moz-background-clip: text;
+		filter: drop-shadow(2px 2px 2px #333333);
+		font-size: 2rem;
+		margin: 0;
 	}
 
 	.loafingGif {
@@ -74,11 +52,13 @@ export const Wrapper = styled.div`
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		border-radius: 10px;
+		mix-blend-mode: screen;
 	}
 
 	h1 {
 		font-family: Fascinate Inline;
-		background: linear-gradient(180deg, #fff, #e08a19);
+		background: linear-gradient(180deg, #ffffff, #e08a19);
 		font-weight: 400;
 		background-size: 100%;
 		background-clip: text;
@@ -86,7 +66,7 @@ export const Wrapper = styled.div`
 		-webkit-text-fill-color: transparent;
 		-moz-background-clip: text;
 		-moz-text-fill-color: transparent;
-		filter: drop-shadow(2px 2px #9ec3ff);
+		filter: drop-shadow(2px 2px 2px #333333);
 		font-size: 70px;
 		text-align: center;
 		margin: 20px;
