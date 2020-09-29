@@ -37,13 +37,11 @@ const QuestionCard: React.FC<Props> = ({
 				<ButtonWrapper
 					key={answer}
 					correct={userAnswer?.correctAnswer === answer}
-					userClicked={userAnswer?.answer === answer}
-					className='answerBtnsContainer'>
+					userClicked={userAnswer?.answer === answer}>
 					<button
 						disabled={userAnswer ? true : false}
 						value={answer}
-						onClick={callback}
-						className='answerBtns'>
+						onClick={callback}>
 						<span
 							dangerouslySetInnerHTML={{
 								__html: answer,

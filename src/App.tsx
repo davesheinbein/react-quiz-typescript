@@ -33,7 +33,7 @@ const App = () => {
 	const [gameOver, setGameOver] = useState(true);
 
 	// console.log(
-	// 	fetchQuizQuestions(TOTAL_QUESTIONS, Difficulty.EASY)
+	// 	fetchQuizQuestions(TOTAL_QUESTIONS, Difficulty.HARD)
 	// );
 
 	// console.log(questions);
@@ -44,7 +44,7 @@ const App = () => {
 
 		const newQuestions = await fetchQuizQuestions(
 			TOTAL_QUESTIONS,
-			Difficulty.EASY
+			Difficulty.HARD
 		);
 
 		setQuestions(newQuestions);

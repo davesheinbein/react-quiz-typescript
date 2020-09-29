@@ -16,12 +16,12 @@ export type QuestionState = Question & {
 export enum Difficulty {
 	EASY = 'easy',
 	MEDIUM = 'medium',
-	Hard = 'hard',
+	HARD = 'hard',
 }
 
 export const fetchQuizQuestions = async (
 	amount: number,
-	difficulty: Difficulty
+	difficulty: Difficulty,
 ) => {
 	// category 14 is specific to the TV questions on the API if
 	// I want to make categories dropdown update number

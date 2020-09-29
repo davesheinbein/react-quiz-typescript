@@ -31,7 +31,7 @@ export const ButtonWrapper = styled.div<ButtonWrapperProps>`
 	button {
 		cursor: pointer;
 		user-select: none;
-		font-size: 0.8rem;
+		font-size: 0.85rem;
 		width: 100%;
 		height: 40px;
 		margin: 5px 0;
@@ -49,6 +49,7 @@ export const ButtonWrapper = styled.div<ButtonWrapperProps>`
 		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
 		:hover {
 			opacity: 0.9;
+			color: #000000;
 		}
 	}
 `;
