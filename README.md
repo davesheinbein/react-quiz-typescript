@@ -2,7 +2,7 @@
 
 ### Click the link to view the website
 
-[React Typescript Quiz Webstite](https://davesheinbein.github.io/react-quiz-typescript/)
+[React Typescript Quiz Webstite](https://react-typescript-quiz-app.netlify.app/)
 
 ### About Us
 
@@ -42,7 +42,7 @@ David Sheinbein - https://www.linkedin.com/in/david-sheinbein/
 
 ### Click the link to view the website
 
-[React Typescript Quiz Webstite](https://davesheinbein.github.io/react-quiz-typescript/)
+[React Typescript Quiz Webstite](https://react-typescript-quiz-app.netlify.app/)
 
 ### Click the link to view David Sheinbeins Portfolio website
 
