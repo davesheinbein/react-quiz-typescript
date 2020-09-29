@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 		rgba(224, 138, 25, 0.95)
 	);
 	border-radius: 10px;
-	border: 2px solid #333333;
+	border: 2px solid rgba(51, 51, 51, 0.5);
 	padding: 20px;
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
 	text-align: center;
@@ -42,7 +42,7 @@ export const ButtonWrapper = styled.div<ButtonWrapperProps>`
 				? 'linear-gradient(90deg, rgba(255, 86, 86, 1), rgba(193, 104, 104, 1))'
 				: 'linear-gradient(90deg, rgba(93, 220, 240, 0.75), rgba(93, 220, 240, 1))'};
 		border: 3px solid rgba(51, 51, 51, 0.2);
-		box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 		border-radius: 10px;
 		outline: transparent;
 		color: #fff;

@@ -14,7 +14,13 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0 20px;
         display: flex;
-        justify-content: center;
+		justify-content: center;
+		-webkit-touch-callout: none; 
+		-webkit-user-select: none;
+		-khtml-user-select: none; 
+		-moz-user-select: none; 
+		-ms-user-select: none;
+		user-select: none;
     }
 
     *{
@@ -83,6 +89,7 @@ export const Wrapper = styled.div`
 		height: 40px;
 		margin: 20px 0;
 		padding: 0 40px;
+		outline: transparent;
 	}
 	.start {
 		max-width: 200px;
