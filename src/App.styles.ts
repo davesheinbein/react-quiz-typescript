@@ -54,6 +54,8 @@ export const Wrapper = styled.div`
 		align-items: center;
 		border-radius: 10px;
 		mix-blend-mode: screen;
+		font-size 10rem;
+		color: rgba(224, 138, 25, 1);
 	}
 
 	h1 {

@@ -109,7 +109,7 @@ const App = () => {
 					<p>
 						<img
 							src={loadingGif}
-							alt='Loading ...'
+							alt='Loading...'
 							className='loafingGif'
 						/>
 					</p>
