@@ -6,7 +6,7 @@
 
 ### About Us
 
-Simple Frontend application utilizing the [Open Trivia Database](https://opentdb.com/) API and [Styled-Components](https://styled-components.com/). The API generates Trivia questions and answers. That allow will pull a randomly generated background from Unsplash.
+Simple Frontend application utilizing the [Open Trivia Database](https://opentdb.com/) API and [Styled-Components](https://styled-components.com/). The API generates Trivia questions and answers. That will pull a randomly generated background from Unsplash.
 
 #### Project Work:
 
@@ -32,11 +32,11 @@ David Sheinbein - https://www.linkedin.com/in/david-sheinbein/
 
 #### 4. Typescript
 
-#### 4. React
+#### 5. React
 
-#### 5. Git
+#### 6. Git
 
-#### 6. Github Pages
+#### 7. Github Pages
 
 ## Potential Next Steps:
 
