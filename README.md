@@ -36,7 +36,7 @@ David Sheinbein - https://www.linkedin.com/in/david-sheinbein/
 
 #### 6. Git
 
-#### 7. Github Pages
+#### 7. Netlify
 
 ## Potential Next Steps:
 
